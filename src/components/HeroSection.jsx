@@ -230,18 +230,18 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
             initial={false}
             animate={isRevealed ? { opacity: 1, y: 0 } : { opacity: 0, y: 28 }}
             transition={{ duration: 0.75, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            className="text-[clamp(4.25rem,14vw,9rem)] font-black uppercase tracking-tight text-black leading-[0.88]"
+            className="text-[clamp(4.25rem,14vw,9rem)] font-black tracking-tight text-black leading-[0.88]"
           >
-            FIRDAUS
+            Andika
           </Gsap.h1>
 
           <Gsap.h1
             initial={false}
             animate={isRevealed ? { opacity: 1, y: 0 } : { opacity: 0, y: 28 }}
             transition={{ duration: 0.75, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="text-[clamp(4.25rem,14vw,9rem)] font-black uppercase tracking-tight text-transparent leading-[0.88] mt-2 sm:mt-0 font-outline-fallback"
+            className="text-[clamp(4.25rem,14vw,9rem)] font-black tracking-tight text-transparent leading-[0.88] mt-2 sm:mt-0 font-outline-fallback"
           >
-            ZICKRIAN
+            Tampubolon
           </Gsap.h1>
 
           {/* Right Decoration */}
