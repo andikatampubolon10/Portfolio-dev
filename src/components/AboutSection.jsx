@@ -276,10 +276,10 @@ const AboutSection = memo(function AboutSection() {
               className="space-y-4 text-[15px] md:text-[15.5px] font-light text-black/60 leading-[1.88] max-w-[580px]"
             >
               <p>
-                I'm <strong className="text-black font-semibold">Firdaus Zickrian</strong>, an AI Engineer focused on building intelligent systems that are not only innovative, but production-ready and measurable in real-world environments.
+                I'm <strong className="text-black font-semibold">Andika Parlinggoman Tampubolon</strong>, a Web Developer dedicated to building high-performance web applications that are not only visually engaging but also production-ready and scalable.
               </p>
               <p>
-                I specialize in Computer Vision and LLM-powered products, with full-stack delivery as a supporting strength to move ideas from prototype to reliable digital products.
+                I specialize in full-stack development, with a focus on creating seamless user experiences and robust backend architectures. By combining clean code with modern design principles, I transform complex ideas into reliable digital products that solve real-world problems.
               </p>
             </Gsap.div>
 
