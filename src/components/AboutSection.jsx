@@ -26,10 +26,10 @@ const STATS = [
 ];
 
 const CAPABILITIES = [
-  'Machine Learning / CV',
-  'Generative AI & LLMs',
-  'Full-Stack Delivery',
-  'Data Engineering',
+  'Web Development (Frontend & Backend)',
+  'UI/UX DESIGN & PROTOTYPING',
+  'FULL-STACK PRODUCT DELIVERY',
+  'DATA ARCHITECTURE & AI INTEGRATION',
 ];
 
 /* ─────────────────────────────────────────
@@ -170,7 +170,7 @@ const AboutSection = memo(function AboutSection() {
                 <div className="absolute inset-0 bg-black/[0.12] group-hover:bg-transparent transition-colors duration-700 z-10 mix-blend-multiply pointer-events-none" />
 
                 <picture>
-                  <source srcSet="/profilee.webp" type="image/webp" />
+                  <source srcSet="/foto.jpg" type="image/webp" />
                   <img
                     src="/profilee.webp"
                     alt="Andika Tampubolon"
@@ -244,11 +244,11 @@ const AboutSection = memo(function AboutSection() {
               {/* Main title */}
               <h2 className="font-display font-bold tracking-[-0.025em] leading-[1.08] text-black">
                 <span className="block text-[44px] sm:text-[56px] lg:text-[64px] xl:text-[72px]">
-                  AI Engineer
+                  Full-Stack Web Developer
                 </span>
 
                 <span className="block text-[22px] sm:text-[26px] lg:text-[30px] xl:text-[34px] font-medium tracking-[-0.01em] text-black/55 mt-2">
-                  with Full-Stack Product Delivery
+                  with AI Integration Expertise
                 </span>
               </h2>
             </Gsap.div>
@@ -263,7 +263,7 @@ const AboutSection = memo(function AboutSection() {
             >
 
               <span className="font-mono text-[10px] md:text-[10.5px] uppercase tracking-[0.2em] text-black/35">
-                Computer Vision · LLM Systems · Full-Stack Delivery
+                FRONTEND DEVELOPMENT · BACKEND ARCHITECTURE · FULL-STACK DELIVERY
               </span>
             </Gsap.div>
 
