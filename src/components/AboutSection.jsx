@@ -47,8 +47,8 @@ const AchievementCard = ({ achievement, index, onClick }) => {
       whileHover={{ y: -2 }}
       className="group relative cursor-pointer rounded-[8px] overflow-hidden border border-black/[0.08] bg-[#FFFEFC] shadow-[0_4px_14px_rgba(0,0,0,0.03)] hover:border-black/14 hover:shadow-[0_10px_28px_rgba(0,0,0,0.06)] transition-all duration-300"
     >
-      <div className="absolute -right-10 -top-10 h-36 w-36 rounded-full bg-lime-300/[0.16] blur-3xl opacity-35 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-br from-lime-200/[0.08] via-transparent to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+      <div className="absolute -right-10 -top-10 h-36 w-36 rounded-full bg-sky-300/[0.16] blur-3xl opacity-35 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-br from-sky-200/[0.08] via-transparent to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
       <div className="absolute inset-0 border border-black/[0.03] rounded-[8px] pointer-events-none" />
 
       <div className="relative z-10 p-6 md:p-7">
@@ -128,7 +128,7 @@ const AboutSection = memo(function AboutSection() {
 
       {/* Ambient background glows */}
       <div className="absolute inset-0 pointer-events-none select-none">
-        <div className="absolute right-0 top-1/4 w-[520px] h-[520px] bg-lime-300/[0.07] rounded-full blur-[110px]" />
+        <div className="absolute right-0 top-1/4 w-[520px] h-[520px] bg-sky-300/[0.07] rounded-full blur-[110px]" />
         <div className="absolute -left-24 bottom-0 w-[380px] h-[380px] bg-black/[0.03] rounded-full blur-[100px]" />
       </div>
 
@@ -142,7 +142,7 @@ const AboutSection = memo(function AboutSection() {
           transition={{ duration: 0.6 }}
           className="flex items-center gap-3 mb-16 md:mb-20"
         >
-          <span className="w-[6px] h-[6px] rounded-full bg-lime-500 shrink-0" />
+          <span className="w-[6px] h-[6px] rounded-full bg-sky-500 shrink-0" />
           <span className="font-mono text-[10px] md:text-[11px] font-bold uppercase tracking-[0.24em] text-black/32">
             01 — About
           </span>
@@ -163,7 +163,7 @@ const AboutSection = memo(function AboutSection() {
           >
             {/* Profile image with decorative offset border */}
             <div className="relative">
-              <div className="absolute -top-2.5 -left-2.5 w-full h-full border border-lime-400/25 rounded-[4px] pointer-events-none" />
+              <div className="absolute -top-2.5 -left-2.5 w-full h-full border border-sky-400/25 rounded-[4px] pointer-events-none" />
 
               <div className="relative aspect-[4/5] w-full rounded-[4px] overflow-hidden border border-black/[0.07] bg-black/[0.04] group">
                 {/* Hover desaturation overlay */}
@@ -199,7 +199,7 @@ const AboutSection = memo(function AboutSection() {
               <div className="bg-white border border-black/[0.08] rounded-[3px] py-3.5 px-4">
                 <p className="font-mono text-[9px] uppercase tracking-[0.14em] text-black/32 mb-1.5">Status</p>
                 <div className="flex items-center gap-2">
-                  <span className="w-[6px] h-[6px] rounded-full bg-lime-500 shrink-0" />
+                  <span className="w-[6px] h-[6px] rounded-full bg-sky-500 shrink-0" />
                   <span className="text-[13px] font-bold text-black">Available</span>
                 </div>
               </div>
@@ -318,7 +318,7 @@ const AboutSection = memo(function AboutSection() {
                 className="mt-14 md:mt-16"
               >
                 <div className="flex items-center gap-3 mb-5">
-                  <span className="w-[5px] h-[5px] rounded-full bg-lime-500 shrink-0" />
+                  <span className="w-[5px] h-[5px] rounded-full bg-sky-500 shrink-0" />
                   <p className="font-mono text-[9.5px] md:text-[10px] uppercase tracking-[0.22em] text-black/40">
                     Notable Achievements
                   </p>

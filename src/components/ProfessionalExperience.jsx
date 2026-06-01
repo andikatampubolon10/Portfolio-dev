@@ -77,7 +77,7 @@ const ExperienceItem = ({ experience, isExpanded, onToggle, index }) => {
       <div className="absolute left-[15px] top-0 h-full w-px bg-black/[0.08]" />
 
       <div className="relative pl-8 min-w-0">
-        <span className={`absolute left-[10px] top-8 h-[11px] w-[11px] rounded-full border ${isExpanded ? 'border-lime-500 bg-lime-500' : 'border-black/25 bg-[#FAF9F6]'}`} />
+        <span className={`absolute left-[10px] top-8 h-[11px] w-[11px] rounded-full border ${isExpanded ? 'border-sky-500 bg-sky-500' : 'border-black/25 bg-[#FAF9F6]'}`} />
 
         <button
           onClick={onToggle}
@@ -92,7 +92,7 @@ const ExperienceItem = ({ experience, isExpanded, onToggle, index }) => {
                   {experience.period}
                 </span>
                 {isCurrent && (
-                  <span className="font-mono text-[9px] uppercase tracking-[0.16em] bg-lime-400 text-black px-2.5 py-1 rounded-[2px]">
+                  <span className="font-mono text-[9px] uppercase tracking-[0.16em] bg-sky-400 text-black px-2.5 py-1 rounded-[2px]">
                     Active Now
                   </span>
                 )}
@@ -189,7 +189,7 @@ const ProfessionalExperience = () => {
 
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
         <div className="flex items-center gap-3 mb-14 md:mb-16">
-          <span className="w-[6px] h-[6px] rounded-full bg-lime-500 shrink-0" />
+          <span className="w-[6px] h-[6px] rounded-full bg-sky-500 shrink-0" />
           <span className="font-mono text-[10px] md:text-[11px] font-bold uppercase tracking-[0.24em] text-black/32">
             03 - Experience
           </span>

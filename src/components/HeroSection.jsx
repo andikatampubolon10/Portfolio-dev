@@ -55,13 +55,13 @@ const OrbitingDecoration = ({ icon: Icon, delay, className, isRevealed, enableAm
       y: { duration: 0.65, delay, ease: [0.22, 1, 0.36, 1] },
       scale: { duration: 0.65, delay, ease: [0.22, 1, 0.36, 1] },
     }}
-    className={`absolute flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-lime-500/20 bg-white/60 backdrop-blur-lg shadow-[0_10px_30px_rgba(132,204,22,0.12)] ${className}`}
+    className={`absolute flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-sky-500/20 bg-white/60 backdrop-blur-lg shadow-[0_10px_30px_rgba(132,204,22,0.12)] ${className}`}
     style={enableAmbientMotion && isRevealed ? {
       animation: `hero-float 5.8s ${delay + 0.35}s ease-in-out infinite`,
       willChange: 'transform',
     } : undefined}
   >
-    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-lime-300/25 to-transparent" />
+    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-sky-300/25 to-transparent" />
     <Icon size={18} className="relative text-black/65" />
   </Gsap.div>
 );
@@ -116,7 +116,7 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
     <header
       ref={containerRef}
       id="hero-section"
-      className="min-h-[100svh] w-full relative bg-[#FAF9F6] selection:bg-lime-300 selection:text-black overflow-hidden flex flex-col items-center justify-center pt-16 pb-16"
+      className="min-h-[100svh] w-full relative bg-[#FAF9F6] selection:bg-sky-300 selection:text-black overflow-hidden flex flex-col items-center justify-center pt-16 pb-16"
     >
       {/* ── BACKGROUND ENGINEERING Grid & Dynamic Glow ── */}
       <Gsap.div
@@ -127,7 +127,7 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
         className="absolute inset-0 z-0 pointer-events-none overflow-hidden flex items-center justify-center"
       >
 
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(163,230,53,0.12),transparent_48%),linear-gradient(to_bottom,rgba(163,230,53,0.04),transparent_48%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(56,189,248,0.12),transparent_48%),linear-gradient(to_bottom,rgba(56,189,248,0.04),transparent_48%)]" />
 
         {/* 1. Base Moving Grid */}
         <div
@@ -155,26 +155,26 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
           }}
         />
 
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] h-[90vw] max-w-[920px] max-h-[920px] rounded-full border border-lime-500/10" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[72vw] h-[72vw] max-w-[720px] max-h-[720px] rounded-full border border-lime-500/10" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] h-[90vw] max-w-[920px] max-h-[920px] rounded-full border border-sky-500/10" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[72vw] h-[72vw] max-w-[720px] max-h-[720px] rounded-full border border-sky-500/10" />
 
         {/* 3. Dynamic Organic Glowing Orbs — CSS animations for zero JS overhead */}
         <div
-          className="absolute top-1/2 left-1/2 w-[60vw] h-[60vw] max-w-[800px] max-h-[800px] bg-lime-300 rounded-full blur-[90px] lg:blur-[130px] opacity-[0.1]"
+          className="absolute top-1/2 left-1/2 w-[60vw] h-[60vw] max-w-[800px] max-h-[800px] bg-sky-300 rounded-full blur-[90px] lg:blur-[130px] opacity-[0.1]"
           style={enableAmbientMotion && isRevealed ? {
             animation: 'hero-orb-1 10s ease-in-out infinite',
             willChange: 'transform',
           } : { transform: 'translate3d(-50%, -50%, 0)' }}
         />
         <div
-          className="absolute top-1/4 right-[20%] w-[40vw] h-[40vw] max-w-[600px] max-h-[600px] bg-lime-400 rounded-full blur-[90px] lg:blur-[120px] opacity-[0.06]"
+          className="absolute top-1/4 right-[20%] w-[40vw] h-[40vw] max-w-[600px] max-h-[600px] bg-sky-400 rounded-full blur-[90px] lg:blur-[120px] opacity-[0.06]"
           style={enableAmbientMotion && isRevealed ? {
             animation: 'hero-orb-2 12s 2s ease-in-out infinite',
             willChange: 'transform',
           } : undefined}
         />
         <div
-          className="absolute bottom-[10%] left-[20%] w-[45vw] h-[45vw] max-w-[650px] max-h-[650px] bg-lime-200 rounded-full blur-[100px] lg:blur-[130px] opacity-[0.08]"
+          className="absolute bottom-[10%] left-[20%] w-[45vw] h-[45vw] max-w-[650px] max-h-[650px] bg-sky-200 rounded-full blur-[100px] lg:blur-[130px] opacity-[0.08]"
           style={enableAmbientMotion && isRevealed ? {
             animation: 'hero-orb-3 15s 1s ease-in-out infinite',
             willChange: 'transform',
@@ -257,7 +257,7 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
           className="flex flex-col items-center gap-2 mt-0"
         >
           <h2 className="text-[clamp(1.35rem,4.2vw,2.25rem)] font-bold text-black/80 tracking-tight flex items-center justify-center flex-wrap gap-2 px-2">
-            Architecting <span className="bg-lime-400/30 px-2 rounded-md ring-1 ring-lime-500/20">Intelligent</span> Paradigms<span className="text-lime-500 font-extrabold -ml-1">.</span>
+            Architecting <span className="bg-sky-400/30 px-2 rounded-md ring-1 ring-sky-500/20">Intelligent</span> Paradigms<span className="text-sky-500 font-extrabold -ml-1">.</span>
           </h2>
           <p className="font-sans text-base text-black/60 max-w-xl leading-7 mt-2 px-4">
             AI Engineer & Full-Stack Developer specializing in high-performance, scalable systems.
@@ -273,14 +273,14 @@ const HeroSection = memo(function HeroSection({ isRevealed = true }) {
         >
           <button
             onClick={() => document.getElementById('project-section')?.scrollIntoView({ behavior: 'smooth' })}
-            className="group flex items-center gap-2 bg-black text-white px-6 py-3 font-mono text-sm font-bold uppercase tracking-wider hover:bg-lime-400 hover:text-black transition-all duration-300 cursor-pointer"
+            className="group flex items-center gap-2 bg-black text-white px-6 py-3 font-mono text-sm font-bold uppercase tracking-wider hover:bg-sky-400 hover:text-black transition-all duration-300 cursor-pointer"
           >
             View Projects <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </button>
           <a
             href="/cv.pdf"
             download
-            className="group flex items-center gap-2 bg-transparent text-black border-2 border-black px-6 py-3 font-mono text-sm font-bold uppercase tracking-wider hover:bg-black hover:text-lime-400 transition-all duration-300"
+            className="group flex items-center gap-2 bg-transparent text-black border-2 border-black px-6 py-3 font-mono text-sm font-bold uppercase tracking-wider hover:bg-black hover:text-sky-400 transition-all duration-300"
           >
             Download CV <Download size={16} className="group-hover:translate-y-0.5 transition-transform" />
           </a>

@@ -4,7 +4,7 @@ export const PROJECT_META = [
     slug: "diabetes-classification",
     title: "Diabetes Classification",
     category: "AI / Machine Learning",
-    color: "bg-lime-400",
+    color: "bg-sky-400",
     img: "https://res.cloudinary.com/demlxsf08/image/upload/v1766486193/projek1_gj8ahb.png",
   },
   {
