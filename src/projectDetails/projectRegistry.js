@@ -2,9 +2,9 @@ import { lazy } from "react";
 import { PROJECT_META_BY_SLUG } from "../data/projectMeta";
 
 const PROJECT_DETAIL_COMPONENTS = {
-  "diabetes-classification": lazy(() => import("./DiabetesClassificationDetail")),
-  leadsup: lazy(() => import("./LeadsUpDetail")),
-  polsekrembang: lazy(() => import("./PolsekRembangDetail")),
+  "hris": lazy(() => import("./HRISDetail")),
+  "cbt": lazy(() => import("./CBTDetail")),
+  "sis": lazy(() => import("./SISDetail")),
   floodsegmen: lazy(() => import("./FloodSegmenDetail")),
   qmeal: lazy(() => import("./QMealDetail")),
   lostandfound: lazy(() => import("./LostAndFoundDetail")),

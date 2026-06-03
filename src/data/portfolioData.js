@@ -4,10 +4,10 @@ export const PORTFOLIO_DATA = {
         role: "AI Engineer & Full-Stack Developer",
         bio: "Passionate about building intelligent systems that learn, adapt, and solve complex problems. Specializing in Generative AI, Deep Learning, and Modern Web Technologies.",
         location: "Indonesia",
-        email: "firdauskhotibulzickrian@gmail.com",
+        email: "andikatampubolon72@gmail.com",
         socials: {
-            github: "https://github.com/zickrian",
-            linkedin: "https://linkedin.com/in/firdauskhotibulzickrian/"
+            github: "https://github.com/andikatampubolon10",
+            linkedin: "https://www.linkedin.com/in/andika-parlinggoman-tampubolon-ab4a25272/"
         }
     },
     experience: [
@@ -82,22 +82,22 @@ export const PORTFOLIO_DATA = {
     ],
     projects: [
         {
-            slug: "diabetes-classification",
-            title: "Diabetes Classification",
-            category: "AI / Machine Learning",
-            description: "Machine Learning model to classify diabetes risk based on medical data."
+            slug: "hris",
+            title: "Human Resource Information System (HRIS)",
+            category: "Web & Mobile Development",
+            description: "A comprehensive Human Resource Information System for managing employee data, attendance, and payroll."
         },
         {
-            slug: "leadsup",
-            title: "LeadsUp",
-            category: "AI-Powered Lead Scoring",
-            description: "AI system for scoring sales leads to prioritize high-value prospects."
+            slug: "cbt",
+            title: "Computer Based Test (CBT)",
+            category: "Web Development",
+            description: "A robust and scalable online examination platform for schools and institutions."
         },
         {
-            slug: "polsekrembang",
-            title: "Polsek Rembang Virtual Assistant",
-            category: "RAG Chatbot / AI Assistant",
-            description: "RAG-based chatbot to assist with police station inquiries and services."
+            slug: "sis",
+            title: "School Information System",
+            category: "Web Development",
+            description: "A digital platform for managing student records, grades, and academic administration."
         },
         {
             slug: "floodsegmen",
