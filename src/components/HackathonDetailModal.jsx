@@ -4,28 +4,25 @@ import { createPortal } from 'react-dom';
 import {
     X, Trophy, ChevronLeft, ChevronRight,
     Github, Globe, Users, Zap, Shield, Gamepad2,
-    Coins, Layers
+    Coins, Layers, Crosshair, TrendingUp, Truck, Leaf, Wind, Database
 } from 'lucide-react';
 
 /* ─── Image data (compressed WebP) ───────── */
 const galleryImages = [
-    { src: '/hackathon-base/base-realms-3.webp', alt: 'Base Realms - Onchain Battle Game on Base App' },
-    { src: '/hackathon-base/base-realms-2.webp', alt: 'QRIS Adoption - Normies Friendly Onboarding' },
-    { src: '/hackathon-base/base-realms-5.webp', alt: 'Just 5 Steps to Play' },
-    { src: '/hackathon-base/base-realms-6.webp', alt: 'Trade Collectibles & Mint NFTs' },
-    { src: '/hackathon-base/base-realms-4.webp', alt: 'System Architecture & Flow' },
-    { src: '/hackathon-base/base-realms-1.webp', alt: 'Team Information & Project Roadmap' },
+    { src: '/hackathon-base/fert-innovation.jpg', alt: 'FertInnovation 2025 - Onchain Battle Game on Base App' },
+    { src: '/hackathon-base/announcement.jpg', alt: 'QRIS Adoption - Normies Friendly Onboarding' },
+    { src: '/hackathon-base/certificate.jpg', alt: 'Just 5 Steps to Play' },
 ];
 
-const techStack = ['Solidity', 'Next.js', 'TypeScript', 'JavaScript', 'CSS'];
+const techStack = ['PYTHON', 'NODE.JS', 'REACT', 'FIGMA', 'POSTGRESQL'];
 
 const highlights = [
-    { icon: Gamepad2, label: '16-bit RPG Gameplay', desc: 'Platformer-inspired onchain battle game' },
-    { icon: Coins, label: 'QRIS Payment', desc: 'Scan & pay with Indonesian QRIS - crypto for everyone' },
-    { icon: Shield, label: 'Fair Randomness', desc: 'Commit-reveal mechanics for verifiable outcomes' },
-    { icon: Layers, label: 'ERC-721 + ERC-1155', desc: 'Unique characters & mintable/burnable items' },
-    { icon: Users, label: 'Social Onboarding', desc: 'Share progress on Farcaster & Base App' },
-    { icon: Zap, label: 'Multi-Currency', desc: 'Battle with ETH, USDC, or IDRX' },
+    { icon: Crosshair, label: 'Upstream Precision Input', desc: 'Projects a 26.7% reduction in fertilizer dosage and maps specific Optimal Planting Zones (ZTO).' },
+    { icon: TrendingUp, label: '92% Yield Forecast Accuracy', desc: 'Delivers highly reliable production estimates to secure supply chain resilience.' },
+    { icon: Truck, label: 'Dynamic Distribution Optimization', desc: 'Allocates inventory in real-time to save logistics cost and directly minimize post-harvest waste.' },
+    { icon: Leaf, label: 'Sustainable Agronomics', desc: 'Ensures a 10% yield increase for farmers alongside a 5% FLW savings for enterprise partners.' },
+    { icon: Wind, label: '12% Carbon Decarbonization', desc: 'Tracks and estimates CO2e reduction driven by optimized logistics routes and efficient fertilizer use.' },
+    { icon: Database, label: 'AUM-Based SaaS Framework', desc: 'Operates on a scalable Area Under Management subscription model for predictable tech-stack scaling.' },
 ];
 
 const links = {
@@ -213,29 +210,18 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
                             {/* Title block */}
                             <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
                                 <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] md:tracking-[0.26em] text-black/40 mb-4">
-                                    Base Indonesia Hackathon 2025
+                                    FertInnovation 2025 by Pupuk Indonesia
                                 </p>
 
                                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase leading-[0.9] tracking-tighter text-black mb-6">
-                                    BASE <span className="text-transparent" style={{ WebkitTextStroke: '2px black' }}>REALMS</span>
+                                    FERT<span className="text-transparent" style={{ WebkitTextStroke: '2px black' }}>INNOVATION</span>
                                 </h1>
 
                                 <p className="text-base md:text-lg leading-7 md:leading-8 text-black/60 max-w-2xl mx-auto">
-                                    An onchain 16-bit RPG battle game built on Base, where players mint characters, battle for seasonal rewards,
-                                    and onboard into crypto through QRIS - no DeFi knowledge required.
+                                    Project developed for the FertInnovation 2025 competition organized by Pupuk Indonesia. 
+                                    (Update this description with the actual details of your project).
                                 </p>
 
-                                {/* Action links */}
-                                <div className="mt-10 flex flex-wrap justify-center gap-4">
-                                    <a href={links.live} target="_blank" rel="noreferrer"
-                                        className="bg-sky-400 text-black px-8 py-3.5 font-bold uppercase text-xs tracking-wider hover:bg-black hover:text-white transition-all duration-300 rounded-[2px] flex items-center gap-2">
-                                        <Globe size={16} /> Play Live
-                                    </a>
-                                    <a href={links.github} target="_blank" rel="noreferrer"
-                                        className="bg-black/5 text-black px-8 py-3.5 font-bold uppercase text-xs tracking-wider border border-transparent hover:border-black/20 transition-all duration-300 rounded-[2px] flex items-center gap-2">
-                                        <Github size={16} /> Repository
-                                    </a>
-                                </div>
                             </div>
 
                             {/* Image gallery */}
@@ -253,9 +239,7 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
                                             <span className="w-6 h-[1px] bg-black/20" /> The Problem
                                         </h2>
                                         <p className="text-base leading-relaxed text-black/80">
-                                            Most onchain applications push users toward speculative behavior - participation is tightly coupled with price movements,
-                                            token volatility, and trading risk. NFT-based games amplify this with opaque reward mechanics where minting,
-                                            randomness, and payouts are blended into a single flow.
+                                            Massive Food Loss and Waste (FLW) creates severe structural inefficiencies across the supply chain. Concurrently, traditional farming faces up to 15% fertilizer inefficiency due to volatile weather patterns and dynamic soil conditions, heavily eroding smallholder margins and burdening enterprise inventory logistics.
                                         </p>
                                     </div>
 
@@ -265,10 +249,10 @@ export default function HackathonDetailModal({ isOpen, onClose }) {
                                         </h2>
                                         <ul className="space-y-4">
                                             {[
-                                                'Clear asset ownership with ERC-721 characters & ERC-1155 items.',
-                                                'Minting for ownership, not gambling - fees go to liquidity, not RNG payouts.',
-                                                'Battles as the economic engine - value from skill, not speculation.',
-                                                'QRIS onboarding for non-crypto users - scan, play, and learn crypto naturally.'
+                                                'Climate-Adaptive AI Modeling: Implementing a dual-model architecture using Random Forest for upstream precision inputs and RNN for accurate downstream forecasting.',
+                                                'Non-IoT Big Data Integration: Processing satellite imagery, BMKG climate data, and economic indicators into actionable insights without expensive hardware dependency.',
+                                                'Proactive Risk Mitigation: Predicting FLW risks up to 60 days in advance, allowing enterprises to optimize logistics before losses occur.',
+                                                'Human-in-the-Loop Safeguards: Embedding ensemble modeling and field officer override mechanisms to eliminate model bias during extreme weather anomalies.'
                                             ].map((item, i) => (
                                                 <li key={i} className="flex gap-4">
                                                     <span className="mt-1.5 shrink-0 block w-1.5 h-1.5 bg-sky-500 rounded-full" />

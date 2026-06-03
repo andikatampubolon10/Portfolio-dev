@@ -11,11 +11,11 @@ const achievements = [
   {
     icon: Trophy,
     rank: 'National',
-    category: 'Hackathon',
+    category: 'Competition',
     title: 'National Finalist',
-    event: 'Base Indonesia Hackathon 2025',
+    event: 'FertInnovation 2025 by Pupuk Indonesia',
     year: '2025',
-    description: 'Competed against top engineering teams nationwide, building a decentralized solution on the Base blockchain.',
+    description: 'Achieved National Finalist status in the FertInnovation 2025 competition organized by Pupuk Indonesia.',
   },
 ];
 
